@@ -11,35 +11,31 @@ public class DemoApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
-		System.out.print("Enter two numbers: ");
-// nextDouble() reads the next double from the keyboard
-double first = 12.5
-double second = 15.5
-System.out.print("Enter an operator (+, -, *, /): ");
+	double first = 12.5
+	double second = 15.5
+	System.out.print("Enter an operator (+, -, *, /): ");
 	for(int i=0;i<4;i++){
-		char operator = i
-double result;
-//switch case for each of the operations
-switch(operator)
-{
-case '0':
-result = first + second;
-break;
-case '1':
-result = first - second;
-break;
-case '2':
-result = first * second;
-break;
-case '3':
-result = first / second;
-break;
-// operator doesn't match any case constant (+, -, *, /)
- 
- 
-default:
-System.out.printf("Error! operator is not correct");
-return;
+		int operator = i
+		double result;
+		//switch case for each of the operations
+		switch(operator)
+		{
+		case '0':
+		result = first + second;
+		break;
+		case '1':
+		result = first - second;
+		break;
+		case '2':
+		result = first * second;
+		break;
+		case '3':
+		result = first / second;
+		break;
+		// operator doesn't match any case constant (+, -, *, /)
+		default:
+		System.out.printf("Error! operator is not correct");
+		return;
 }
 }
 //printing the result of the operations
